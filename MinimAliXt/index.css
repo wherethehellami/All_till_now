@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Dosis', sans-serif;
+    overflow-x: hidden;
+    height: 100%;
+
+    background-image: url(img/V.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-attachment: fixed;
+    color: rgb(213, 213, 213);
+    background-color: #000000;
+}
+
+
+.scroll {
+    display: flex;
+    justify-content: left;
+     height: 500px;
+   
+}
+
+.scroll h1 {
+    font-size: 100px;
+}
+
+
+header {
+    /* margin: 10px; */
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-radius: 3px;
+
+}
+
+.about-link{
+  transition: 0.6s all ease;
+}
+
+
+.about-link:hover{
+    border-bottom: 2px solid rgba(255, 0, 0, 0.409);
+}
+
+
+/* *********************HEADER************************** */
+
+.logo {
+    font-size: 35px;
+    padding: 10px;
+    /* padding-left: 10px; */
+}
+
+.items {
+    /* display: flex; */
+    float: right;
+    margin: 10px;
+    
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    position: relative;
+}
+
+.social a {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-decoration: none;
+    width: 0;
+    padding: 10px;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+    font-size: 4vw;
+    color: snow;
+
+}
+
+
+.social a:hover {
+    /* width: fit-content;
+    font-size: medium;
+
+    -webkit-box-shadow: 3px 10px 20px -5px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: 3px 10px 20px -5px rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 10px 20px -5px rgba(255, 255, 255, 0.7); */
+   color: rgba(255, 0, 195, 0.776);
+}
+
+
+.social hr{
+    width: 20vw;
+    color: rgba(246, 13, 168, 0.808);
+}
+/* ******************************************************************* */
+
+
+
+/* About container */
+
+.container-2 {
+    display: block;
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 100%;
+}
+
+
+.about-card {
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    text-align: center;
+
+    /* padding: 60px; */
+    /* width: min-content; */
+}
+
+.about-card .aboutMe {
+    font-size: 50px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(rgba(255, 0, 195, 0.776), rgba(255, 0, 0, 0.287));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Removed javascripted greeting */
+/* 
+#greet {
+    
+    font-weight: 700;
+    background: -webkit-linear-gradient(rgb(143, 31, 168), rgb(255, 0, 0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+/* *********************8 */
+
+
+
+.about-card p {
+    background-color: rgb(33, 33, 33);
+    text-align: center;
+    width: 50%;
+    padding: 200px;
+    line-height: 2rem;
+    
+}
+/* gradient on my name */
+.name {
+   /* color: rgb(103, 101, 101); */
+    /* color: rgba(246, 13, 168, 0.808); */
+    background: -webkit-linear-gradient(rgba(255, 0, 195, 0.776), rgba(255, 0, 0, 0.287));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name-2{
+    font-size: 40px;
+    color: rgba(246, 13, 168, 0.808);
+
+}
+
+
+
+
+@media (max-width:791px) {
+    .name {
+        font-size: 16px;
+    border-bottom: 5px solid;
+        font-weight: 800;
+    }
+
+}
+
+@media (max-width:460px) {
+
+    /*  
+    #greet{
+        font-size: 20px;
+    } */
+    .container {
+        display: block;
+    }
+
+    .container .about-card p {
+        font-size: 12px;
+        padding: 40px;
+        word-wrap: break-word;
+    }
+}
+
+
+
+
+
+
+
+/* HELLO WORLD container */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background: #07252d;
+     */
+     /* background-color:rgba(246, 13, 168, 0.808);; */
+
+     /* background: -webkit-linear-gradient(rgb(25, 0, 31), rgba(255, 0, 0, 0));
+      */
+    /* background: -webkit-linear-gradient(rgba(255, 0, 195, 0.404), rgba(255, 0, 0, 0.287)); */
+
+    overflow-x: hidden;
+    margin-top: 60%;
+}
+
+.container h1 {
+    position: relative;
+    font-size: 10vw;
+    letter-spacing: 15px;
+    color: #0e3742;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.533));
+    line-height: 0.73em;
+    outline: none;
+    animation: animate 3s linear infinite;
+
+
+}
+
+@keyframes animate {
+
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65.1%,
+    80%,
+    90.1%,
+    92% {
+        color: #000000;
+        box-shadow: none;
+    }
+
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    90.2%,
+    100% {
+        color: #fff;
+        box-shadow: 0 0 10px #03bcf4,
+            0 0 20px #03bcf4,
+            0 0 40px #03bcf4,
+            0 0 60px #03bcf4,
+            0 0 160px #03bcf4,
+        ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.animated {
+    background-image: url(/css/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top: 95px;
+    margin-bottom: 60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.skills-desc {
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    font-size: large;
+    text-align: center;
+}
+
+.skills-desc .box1 {
+    background-color: rgb(33, 33, 33);
+    width: 50%;
+}
+
+.skills-desc .box2 {
+    background-color: rgb(33, 33, 33);
+     width: 50%;
+}
+
+.skills-desc ul {
+    margin: 30px;
+    background-color: rgb(33, 33, 33);
+    text-align: left;
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+.skills-desc ul li:nth-child(1) {
+    margin-top: 2rem;
+}
